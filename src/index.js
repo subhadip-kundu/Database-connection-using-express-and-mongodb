@@ -1,6 +1,6 @@
 import app from "./app.js"
 import mongoose from "mongoose"
-const port = 3001
+const port = 3000;
 
 
   // Database connection - mongodb
@@ -8,7 +8,7 @@ const port = 3001
 
   (async () => {
     try {
-      await mongoose.connect('mongodb://127.0.0.1:27017/test');
+      await mongoose.connect('mongodb+srv://subhadip:subhadip@cluster0.ssm3xyz.mongodb.net');
       console.log('DB connected!');
 
       app.on('error', (err) => {
